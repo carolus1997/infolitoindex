@@ -1,0 +1,52 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000; /* Fondo gris oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    margin: 0;
+}
+
+header {
+    background-color: #000000; /* Negro */
+    padding: 20px;
+    text-align: justify;
+    border-bottom: 2px solid #FFFFFF; /* Línea blanca */
+}
+
+header h1 {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    color: #BBBBBB;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFFFFF;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+    opacity: 0; /* Inicialmente invisible */
+    visibility: hidden; /* Evita interacción */
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    background-color: #333333;
+    border: 1px solid #444444;
+}
+
+.dropdown-menu .dropdown-item {
+    color: #BBBBBB;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+/* Mostrar el menú cuando esté en hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1; /* Visible */
+    visibility: visible; /* Permitir interacción */
+}
